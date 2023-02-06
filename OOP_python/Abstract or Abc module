@@ -1,0 +1,17 @@
+from abc import ABC,abstractmethod
+class shape(ABC):
+    @abstractmethod
+    #now neccisity function neccesary to defin in child classes
+    #otherwise 3it through error
+    def neccisity(self):
+        return 0
+class square(shape):
+    def neccisity(self):
+        print("heelo l")
+
+
+a=square()
+a.neccisity()
+
+#in that we cannot make shape object directly
+#for example we can't do b=shape()
